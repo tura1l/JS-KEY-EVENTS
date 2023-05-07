@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-3">
+        <div class="boxsize">
+            <input type="number" class="width" id="en" placeholder="Zehmet olmasa oyun sahesinin enini secin">
+            <input type="number" class="height" id="uzunluq" placeholder="Zehmet olmasa oyun sahesinin uzunluqunu secin">
+            <button class="widhei" onclick="gameAreaWidth(), gameAreaHeight()">Add</button>
+        </div>
+        <div class="boxcolor">
+            <label for="">Oyun sahesinin rengini secin:</label>
+            <input type="color" class="color" id="color">
+            <button class="bxcl" onclick="boxColor()">Add</button>
+        </div>
+        <div class="objectsize">
+            <input type="number" class="owidth" id="topen" placeholder="Zehmet olmasa objectin enini secin">
+            <input type="number" class="oheight" id="topuzun" placeholder="Zehmet olmasa objectin uzunluqunu secin">
+            <button class="owidhei" onclick="objectWidth(),objectHeight()">Add</button>
+        </div>
+        <div class="objectcolor">
+            <label for="">Objectin rengini secin:</label>
+            <input type="color" class="ocolor" id="tcolor">
+            <button class="obxcl" onclick="objectColor()">Add</button>
+        </div>
+        <div class="steps">
+            <input type="number" class="addim" id="steps" placeholder="Zehmet olmasa addimin uzunlugunu secin">
+            <button class="step">Add</button>
+        </div>
+        </div>
+        <div class="gamearea col-9">
+            <div class="gare" id="gamearea">
+              <div class="top" id="boll"></div>
+            </div>
+            <div class="consolle">
+                 <button class="topleft"><i class="las la-mouse-pointer"></i></button>
+                 <button class="movetop" onclick="movingUp()"><i class="las la-arrow-up"></i></button>
+                 <button class="topright"><i class="las la-mouse-pointer"></i></button>
+                    <div class="">
+                        <button class="moveleft" onclick="movingLeft()"><i class="las la-arrow-left"></i></button>
+                        <button class="format" onclick="format()">Space</button>
+                        <button class="moveright" onclick="movingRight()"><i class="las la-arrow-right"></i></button>
+                    </div>
+                    <button class="bottomleft"><i class="las la-mouse-pointer"></i></button>
+                    <button class="movebottom" onclick="movingDown()"><i class="las la-arrow-down"></i></button>
+                    <button class="bottomright"><i class="las la-mouse-pointer"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
